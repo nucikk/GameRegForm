@@ -1,0 +1,16 @@
+.btn-prev,
+.btn-next {
+    height: 50px;
+    width: 150px;
+    margin: 0 20px;
+    font-size: 20px;
+    border-radius: 8px;
+
+}
+
+input {
+    width: 300px;
+    height:35px;
+    display: block;
+    margin: 20px;
+}

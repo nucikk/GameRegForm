@@ -1,0 +1,74 @@
+
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+p,
+a,
+img,
+strong,
+b,
+u,
+i,
+ol,
+ul,
+li,
+article {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+article,
+footer,
+header,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+select,
+option,
+input,
+textarea {
+
+  outline: none;
+}
+
+button {
+  outline: none;
+
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #be90fb;
+  border-radius: 5px;
+}
+
+::-ms-scrollbar {
+  width: 12px;
+}
+
+::-ms-scrollbar-thumb {
+  background-color: #0205058e;
+  border-radius: 5px;
+}
