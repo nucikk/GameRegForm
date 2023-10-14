@@ -23,7 +23,7 @@ function Form() {
       <div className="progressBar"></div>
       <div className="form-group">
         <header className="form-header">
-          <h3>{FormTitle[page]}</h3>
+          <h3 className="form-name">{FormTitle[page]}</h3>
         </header>
         <main>
           <section className="form-section">
