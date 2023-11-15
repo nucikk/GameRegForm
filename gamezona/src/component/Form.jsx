@@ -6,7 +6,7 @@ import OtherInfo from "./OtherInfo";
 function Form() {
   const [page, setPage] = useState(0);
 
-  const FormTitle = ["რეგისტრაცია", "პირადი ინფორმაცია", "სხვა"];
+  const FormTitles = ["რეგისტრაცია", "პირადი ინფორმაცია", "სხვა"];
 
   const [formData, setFormData] = useState({
     email: "",
@@ -39,7 +39,7 @@ function Form() {
       </div>
       <div className="form-group">
         <header className="form-header">
-          <h3 className="form-name">{FormTitle[page]}</h3>
+          <h3 className="form-name">{FormTitles[page]}</h3>
         </header>
         <main>
           <section className="form-section">{pageDisplay()}</section>
@@ -50,18 +50,23 @@ function Form() {
             disabled={page == 0}
             onClick={() => {
               setPage((currentPage) => currentPage - 1);
-            }}
-          >
+            }} >
             prev
           </button>
           <button
             className="btn-next"
-            disabled={page == FormTitle.length - 1}
+            // disabled={page == FormTitle.length - 1}
             onClick={() => {
-              setPage((currentPage) => currentPage + 1);
+              
+          if(page === FormTitles.length - 1) {
+            alert("Form Submit")
+          } else {
+            setPage((currentPage) => currentPage + 1)
+          }
             }}
           >
-            next
+          {page == FormTitles.length -1 ? "Submit" : "Next"}
+
           </button>
         </footer>
       </div>
